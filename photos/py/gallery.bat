@@ -1,0 +1,1 @@
+C:\Anaconda\python.exe C:\Users\jsw65\Documents\Projects\Websites\citationsnew\photos\py\gallery.py C:\Users\jsw65\Documents\Projects\Websites\citationsnew\photos\galleries C:\Users\jsw65\Documents\Projects\Websites\citationsnew\photos\gallery.html > C:\Users\jsw65\Documents\Projects\Websites\citationsnew\photos\py\gallery.log

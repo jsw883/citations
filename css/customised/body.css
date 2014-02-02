@@ -1,0 +1,56 @@
+/*!
+ * Bootstrap v3.0.0
+ * Body css code (under development).
+ */
+
+/* BACKGROUND IMAGE
+body {
+  background-image: url('../../img/background/logos-watermarked.jpg');
+  background-position: center top;
+}
+
+#head {
+  background-image: url('../../img/background/backdrop.jpg');
+  background-repeat: no-repeat;
+  background-size: 518px 120px;
+  background-position: center 10px;
+}
+*/
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.img-rounded {
+  border-radius: 4px;
+}
+
+.divider {
+  height: 1px;
+  margin-bottom: 15px;
+  border-bottom: 1px dotted;
+  border-color: #6C91DA;
+}
+
+.text-box {
+  float: none;
+  padding: 15px;
+  /*border-radius: 4px;*/
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid;
+  border-color: #C2D1FF;
+  background-color: #EBF0FF;
+}
+
+.a-bold {
+  font-weight: 800;
+  color: #333333;
+}
+
+.a-bold:hover, .a-bold:focus {
+  font-weight: bold;
+  color: #333333;
+  /*text-decoration: none;*/
+}

@@ -1,0 +1,30 @@
+/*!
+ * Bootstrap v3.0.0
+ * Generic margin modification css.
+ */
+
+.margined {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.top-margined {
+  margin-top: 15px;
+}
+
+.bot-margined {
+  margin-bottom: 15px;
+}
+
+.no-margined {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.no-top-margined {
+  margin-top: 0px;
+}
+
+.no-bot-margined {
+  margin-bottom: 0px;
+}

@@ -1,0 +1,1 @@
+C:\Anaconda\python.exe C:\Users\jsw65\Documents\Projects\Websites\citationsnew\py\events\events.py C:\Users\jsw65\Documents\Projects\Websites\citationsnew\performances\events C:\Users\jsw65\Documents\Projects\Websites\citationsnew\performances\events.html > C:\Users\jsw65\Documents\Projects\Websites\citationsnew\py\events\events.log

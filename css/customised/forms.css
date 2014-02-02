@@ -1,0 +1,22 @@
+/*!
+ * Bootstrap v3.0.0
+ * Forms css code (under development).
+ */
+
+textarea {
+  resize: none;
+}
+
+.form-control {
+  border-color: #bbccff;
+}
+
+.btn-primary {
+  background-color: #6C91DA;
+  border-color: #526AB3;
+}
+
+.btn-primary:hover {
+  background-color: #3059D6;
+  border-color: #1439A7;
+}

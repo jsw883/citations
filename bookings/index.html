@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <!-- Standard head -->
+    <meta charset="utf-8">
+    <title>The Citations @ Yale Graduate School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/libs/bootstrap-3.0.0.css" rel="stylesheet">
+    <!--<link href="./css/libs/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+    <link href="./css/libs/angular-ui-0.3.0.css" rel="stylesheet">-->
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/customised/navbar.css" rel="stylesheet">
+    <link href="../css/customised/body.css" rel="stylesheet">
+    <link href="../css/customised/head.css" rel="stylesheet">
+    <link href="../css/customised/fonts.css" rel="stylesheet">
+    
+    <link href="../css/customised/modal.css" rel="stylesheet">
+    <link href="../css/customised/forms.css" rel="stylesheet">
+    
+    <link href="../css/customised/margins.css" rel="stylesheet">
+    
+    <style type="text/css"></style>
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+      
+      <!-- header container -->
+      <div class="container">
+        
+        <!-- header text and images -->
+        <div class="head" id="head"><a href="../index.html">
+          <p class="head-name no-margined">
+            <span class="yaledesrom" style="color:#0000AA">Yale</span> <span class="yaledesrom"> Citations</span><sup class="yaledesrom">1</sup>
+          </p>
+          <p class="head-sub no-margined hidden-xs">
+            <span class="yaledesita">1. Yale Graduate School's Co-ed A Cappella Group</span>
+          </p>
+        </a></div>
+        
+        
+        <!-- static navbar -->
+        <div class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-label" href="#">Menu</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../members/index.html">Members</a></li>
+              <li class="active"><a href="#">Bookings</a></li>
+              <li><a href="../music/index.html">Music</a></li>
+              <li><a href="../performances/index.html">Performances</a></li>
+              <li><a href="../photos/index.html">Photos</a></li>
+              <li><a href="../videos/index.html">Videos</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- main container -->
+      <div class="container">
+        
+        <!-- splash image -->
+        <div class="row">
+          <div class="col-md-12">
+            <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined">
+          </div>
+        </div>
+        
+        <!-- main text boxes -->
+        <div class="col-md-12 text-box">
+          <h4 class="no-top-margined">Bookings</h4>
+          <p align="justify">
+          We are always interested in taking on new events, and our regular events include singing at Mory's, graduate and preofesisonal school such as reunions and holiday parties, and other private events such as birthday parties, cocktail parties, and weddings.
+          </p>
+          <p align="justify">
+          If you are interested in having us sing at your next event then please send us an email at <a href="mailto:citations@yale.edu">citations@yale.edu</a> or use the form below, and we will get back to you. You can also contact one of our officers directly if you want to ask one of them about something in specific instead. 
+          </p>
+        </div>
+        
+        <div class="col-md-12 text-box">
+          <h4 class="no-top-margined">Officers</h4>
+          <p align="justify"><a class="a-bold" type="button" href="#officer-modal0" data-toggle="modal">Andrea Katz</a> <br> Music Director <br> <!--Ph.D. in Political Science '14, J.D. at Yale Law School '17 <br>--> <a href="mailto:andrea.katz@yale.edu">andrea.katz@yale.edu</a> </p>
+          <p align="justify"><a class="a-bold" type="button" href="#officer-modal1" data-toggle="modal">James Williams</a> <br> President <br> <!--Ph.D Candidate in Applied Mathematics '17 <br>--> <a href="mailto:james.s.williams@yale.edu">james.s.williams@yale.edu</a> </p>
+          <p class="no-bot-margined" align="justify"><a class="a-bold" type="button" href="#officer-modal2" data-toggle="modal">Padmini Pillai</a> <br> Business Manager <br> <!--Ph.D Candidate in Immunobiology '15 <br>--> <a href="mailto:padmini.pillai@yale.edu">padmini.pillai@yale.edu</a> </p>
+        </div>
+        
+        <!-- booking email -->
+        <div class="col-md-12 text-box">
+          <h4 class="no-top-margined" style="margin-bottom:25px">Email</h4>
+          <form role="form" action="mailto:citations@yale.edu?Subject=Booking Enquiry&Body=" enctype="text/plain" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="contact-message" placeholder="Message"></textarea>
+            </div>
+            <button id="mailto-submission" type="button" class="btn btn-primary">Send</button>
+          </form>
+          
+          <!--
+          <form role="form" action="contact-form-submission.php">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" class="form-control" id="contact-name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="contact-name">Email</label>
+              <input type="text" class="form-control" id="contact-email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="contact-name">Message</label>
+              <textarea class="form-control" rows="10" id="contact-message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          -->
+          
+        </div>
+        
+      </div>
+      
+      <div id="officer-modals">
+        
+        <div id="officer-modal0" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="../members/pictures/Andrea Katz.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Andrea Katz</h4>
+                <p class="no-bot-margined">Music Director <br> Ph.D. in Political Science '14, J.D. at Yale Law School '17 <br> <a href="mailto:andrea.katz@yale.edu">andrea.katz@yale.edu</a></p>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify">Andrea is a 1st year JD student at the Yale Law School and a PhD candidate in Political Science. Although she's played classical piano most of her life, she believes her real musical awakening took place after college, during a year spent in Tokyo frequenting karaoke boxes and working on her singing (soprano). She's into dance, yoga, constitutional law and US and Latin American politics, and isn't a bad cook, either, if she may say so herself!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="officer-modal1" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="../members/pictures/James Williams.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">James Williams</h4>
+                <p class="no-bot-margined">President <br> Ph.D Candidate in Applied Mathematics '17 <br> <a href="mailto:james.s.williams@yale.edu">james.s.williams@yale.edu</a></p>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify">James is a second year Applied Mathematics PhD student even though he claims that he is not actually a nerd. He enjoys working, singing, drawing, hiking, sporting, and skyping New Zealand. Pity about the 15 hour time difference!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="officer-modal2" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="../members/pictures/Padmini Pillai.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Padmini Pillai</h4>
+                <p class="no-bot-margined">Business Manager <br> Ph.D Candidate in Immunobiology '15 <br> <a href="mailto:padmini.pillai@yale.edu">padmini.pillai@yale.edu</a></p>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div id="push"></div>
+    </div>
+    
+    <div class="foot" id="foot">
+      <div class="container">
+        <p class="no-margined">Copyright © 2013, The Citations, Yale Graduate School. All rights reserved. Designed by <a href="mailto:james.s.williams@yale.edu">James Williams</a></p>
+      </div>
+    <div>
+    
+    <!-- bootstrap core JavaScript -->
+    <!-- ========================================================== -->
+    <!-- placed at the end of the document so the pages load faster -->
+    
+    <script src="../js/libs/jquery-1.10.2.js"></script>
+    <script src="../js/libs/jquery-ui-1.10.3.js"></script>
+    <script src="../js/libs/bootstrap-3.0.0.js"></script>
+    
+    <script src="../js/modals/officer-modal-nav.js"></script>
+    <script src="../js/forms/mailto-submission.js"></script>
+    
+    <!--<script src="./js/libs/angular-1.0.8.js"></script>
+    <script src="./js/libs/angular-strap-0.7.5.js"></script>
+    <script src="./js/libs/angular-ui-1.10.3.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.carousel').carousel({
+          interval: 5000
+        });
+        $('.splashCarousel').carousel('cycle');
+      });
+    </script>-->
+    
+  </body>
+  
+  
+</html>

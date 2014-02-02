@@ -1,0 +1,1 @@
+C:\Anaconda\python.exe C:\Users\jsw65\Documents\Projects\Websites\citationsnew\videos\py\videos.py C:\Users\jsw65\Documents\Projects\Websites\citationsnew\videos\videos C:\Users\jsw65\Documents\Projects\Websites\citationsnew\videos\videos.html > C:\Users\jsw65\Documents\Projects\Websites\citationsnew\videos\py\videos.log

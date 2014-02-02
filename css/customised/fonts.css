@@ -1,0 +1,51 @@
+/*!
+ * Additional Fonts
+ */
+ 
+@font-face {
+    font-family: yaledesrom;
+    src: local(yaledesrom), url('../../fonts/yale/converted/yaledesrom.ttf') format('truetype');
+}
+.yaledesrom {
+  font-family: yaledesrom;
+}
+
+@font-face {
+    font-family: yaledesita;
+    src: local(yaledesita), url('../../fonts/yale/converted/yaledesita.ttf') format('truetype');
+}
+.yaledesita {
+  font-family: yaledesita;
+}
+
+@font-face {
+    font-family: yaledesbolrom;
+    src: local(yaledesbolrom), url('../../fonts/yale/converted/yaledesbolrom.ttf') format('truetype');
+}
+.yaledesbolrom {
+  font-family: yaledesbolrom;
+}
+
+@font-face {
+    font-family: yaledesbolita;
+    src: local(yaledesbolita), url('../../fonts/yale/converted/yaledesbolita.ttf') format('truetype');
+}
+.yaledesbolita {
+  font-family: yaledesbolita;
+}
+
+@font-face {
+    font-family: yaledessmacap;
+    src: local(yaledessmacap), url('../../fonts/yale/converted/yaledessmacap.ttf') format('truetype');
+}
+.yaledessmacap {
+  font-family: yaledessmacap;
+}
+
+@font-face {
+    font-family: yaledesitasmacap;
+    src: local(yaledesitasmacap), url('../../fonts/yale/converted/yaledesitasmacap.ttf') format('truetype');
+}
+.yaledesitasmacap {
+  font-family: yaledesitasmacap;
+}

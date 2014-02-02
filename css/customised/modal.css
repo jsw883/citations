@@ -1,0 +1,44 @@
+/*!
+ * Bootstrap v3.0.0
+ * Modal css code.
+ */
+.modal:focus {
+  outline: none;
+}
+
+.modal-content {
+  overflow: hidden;
+}
+
+.modal-body {
+  padding: 15px;
+}
+
+.modal-header {
+  border-color: #e5e5e5;
+}
+
+.left-image {
+  height: 300px;
+  float: left;
+  margin-right: 20px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.right-image {
+  height: 300px;
+  float: right;
+  margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 676px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    width: 900px;
+  }
+}
