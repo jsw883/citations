@@ -8,10 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
-
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- Bootstrap core CSS -->
-    <link href="../css/libs/bootstrap-3.0.0.css" rel="stylesheet">
+    <link href="../css/libs/bootstrap-3.3.4.css" rel="stylesheet">
     <!--<link href="../css/libs/jquery-ui-1.10.3.custom.css" rel="stylesheet">
     <link href="../css/libs/angular-ui-0.3.0.css" rel="stylesheet">-->
     
@@ -41,11 +59,10 @@
           <p class="head-name no-margined">
             <span class="yaledesrom" style="color:#0000AA">Yale</span> <span class="yaledesrom"> Citations</span><sup class="yaledesrom">1</sup>
           </p>
-          <p class="head-sub no-margined hidden-xs">
-            <span class="yaledesita">1. Yale Graduate School's Co-ed A Cappella Group</span>
+          <p class="head-sub no-margined hidden-xs" style="padding-right:8px">
+            <sup class="yaledesrom">1 </sup><span class="yaledesrom">Yale's Graduate </span><span class="yaledesita"> A Cappella </span><span class="yaledesrom"> Group</span>
           </p>
         </a></div>
-        
         
         <!-- static navbar -->
         <div class="navbar navbar-default">
@@ -78,28 +95,50 @@
         <!-- splash image -->
         <div class="row">
           <div class="col-md-12">
-            <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined">
+            <a href="../ticketing/index.html">
+            <!-- <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined"> -->
+            <img src="../img/background/spring-concert-2015.jpg" class="img-responsive margined visible-xs">
+            <div class="img-container-scaling margined hidden-xs" style="background-image:url(../img/background/spring-concert-2015.jpg);"><div class="bitterbold" id="floating">SPRING&nbsp;CONCERT</div></div></a>
+          </div>
+        </div>
+         
+        <!-- main text boxes -->
+        <div class="col-md-12 text-box">
+          <h4 class="no-top-margined">Yale Founders Day 2014</h4>
+          <p align="justify" class="no-bot-margined">Yale celebrated the anniversary of the university's creation 313 years ago with our first Founders Day celebration on Oct 14, 2014. The festivities culminated in a Cross Campus celebration with photo booths, seasonal food, and a performance by the Citations during President Salovey's address to the crowd of 2000!</p>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <div id="yale-founders-day-2014" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+              <div class="slides"></div>
+              <h3 class="title"></h3>
+              <a class="prev"><span style="margin-left:-3px;"></span></a>
+              <a class="next"><span style="margin-left:+3px;"></span></a>
+              <a class="play-pause"></a>
+              <ol class="indicator"></ol>
+            </div>
           </div>
         </div>
         
-        <!-- main text boxes -->
         <div class="col-md-12 text-box">
-          <h4 class="no-top-margined">End of Year Spring Concert (2013)</h4>
-          <p align="justify" class="no-bot-margined">Last year we performed in the common room at the McDougal Graduate Student Center of Arts and Sciences for our end of year Spring concert and we managed to get it all on record. Most of our members are still around, but we will miss those who have graduated and moved on to new heights!</p>
+          <h4 class="no-top-margined">Spring Concert 2013</h4>
+          <p align="justify" class="no-bot-margined">Last year we performed in the common room at the McDougal Graduate Student Center of Arts and Sciences for our end of year Spring concert and got it all on record. Most of our members are still around, but we will miss those who have graduated and moved on to new heights!</p>
         </div>
         
         <div class="row">
           <div class="col-md-12">
             <div id="spring-concert-2013" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
               <div class="slides"></div>
-              <h4 class="title"></h4>
-              <a class="prev"><span style="margin-left:-3px;">‹</span></a>
-              <a class="next"><span style="margin-left:+3px;">›</span></a>
+              <h3 class="title"></h3>
+              <a class="prev"><span style="margin-left:-3px;"></span></a>
+              <a class="next"><span style="margin-left:+3px;"></span></a>
               <a class="play-pause"></a>
               <ol class="indicator"></ol>
             </div>
           </div>
         </div>
+        
       </div>
       
       <div id="push"></div>
@@ -118,7 +157,7 @@
     
     <script src="../js/libs/jquery-1.10.2.js"></script>
     <script src="../js/libs/jquery-ui-1.10.3.js"></script>
-    <script src="../js/libs/bootstrap-3.0.0.js"></script>
+    <script src="../js/libs/bootstrap-3.3.4.js"></script>
     
     <script src="../js/libs/blueimp-gallery-2.11.2.js"></script>
     
@@ -126,134 +165,151 @@
     <script>
       blueimp.Gallery(
         [{
+          title: "Yale Founders Day 2014",
+          href: "http://www.youtube.com/watch?v=Ot20ObcI-bo",
+          type: "text/html",
+          youtubeid: "Ot20ObcI-bo",
+          poster: "./videos/20141004/screenshots/Yale Founders Day 2014.jpg"
+        }],
+        {
+          container: "#yale-founders-day-2014",
+          carousel: true,
+          
+          youTubeVideoIdProperty: "youtubeid",
+          youTubeClickToPlay: false
+        }
+      );
+    </script>    
+    <script>
+      blueimp.Gallery(
+        [{
           title: "Somebody To Love (Queen)",
           href: "http://www.youtube.com/watch?v=Zv1lQKFhEbs",
           type: "text/html",
           youtubeid: "Zv1lQKFhEbs",
-          poster: "./videos/spring-concert-2013/screenshots/Somebody To Love (Queen).jpg"
+          poster: "./videos/20140501/screenshots/Somebody To Love (Queen).jpg"
         },
         {
           title: "Breakfast at Tiffany's (Deep Blue Something)",
           href: "http://www.youtube.com/watch?v=XOTw3ApXNVA",
           type: "text/html",
           youtubeid: "XOTw3ApXNVA",
-          poster: "./videos/spring-concert-2013/screenshots/Breakfast at Tiffany's (Deep Blue Something).jpg"
+          poster: "./videos/20140501/screenshots/Breakfast at Tiffany's (Deep Blue Something).jpg"
         },
         {
           title: "100 Years (Five For Fighting)",
           href: "http://www.youtube.com/watch?v=Osl2OABX4mI",
           type: "text/html",
           youtubeid: "Osl2OABX4mI",
-          poster: "./videos/spring-concert-2013/screenshots/100 Years (Five For Fighting).jpg"
+          poster: "./videos/20140501/screenshots/100 Years (Five For Fighting).jpg"
         },
         {
           title: "Rumor Has It (Adele)",
           href: "http://www.youtube.com/watch?v=FsVrWUlLu1k",
           type: "text/html",
           youtubeid: "FsVrWUlLu1k",
-          poster: "./videos/spring-concert-2013/screenshots/Rumor Has It (Adele).jpg"
+          poster: "./videos/20140501/screenshots/Rumor Has It (Adele).jpg"
         },
         {
           title: "I'll Be Seeing You (Ambrose)",
           href: "http://www.youtube.com/watch?v=PchKSMqzEng",
           type: "text/html",
           youtubeid: "PchKSMqzEng",
-          poster: "./videos/spring-concert-2013/screenshots/I'll Be Seeing You (Ambrose).jpg"
+          poster: "./videos/20140501/screenshots/I'll Be Seeing You (Ambrose).jpg"
         },
         {
           title: "Pinball Wizard (The Who)",
           href: "http://www.youtube.com/watch?v=GM714gfkvA4",
           type: "text/html",
           youtubeid: "GM714gfkvA4",
-          poster: "./videos/spring-concert-2013/screenshots/Pinball Wizard (The Who).jpg"
+          poster: "./videos/20140501/screenshots/Pinball Wizard (The Who).jpg"
         },
         {
           title: "Heaven (John Legend)",
           href: "http://www.youtube.com/watch?v=Wamn8A5B-Vo",
           type: "text/html",
           youtubeid: "Wamn8A5B-Vo",
-          poster: "./videos/spring-concert-2013/screenshots/Heaven (John Legend).jpg"
+          poster: "./videos/20140501/screenshots/Heaven (John Legend).jpg"
         },
         {
           title: "Bills Bills Bills (Destiny's Child)",
           href: "http://www.youtube.com/watch?v=Vwq_hApTsfc",
           type: "text/html",
           youtubeid: "Vwq_hApTsfc",
-          poster: "./videos/spring-concert-2013/screenshots/Bills Bills Bills (Destiny's Child).jpg"
+          poster: "./videos/20140501/screenshots/Bills Bills Bills (Destiny's Child).jpg"
         },
         {
           title: "Feeling Good (Michael Bublé)",
           href: "http://www.youtube.com/watch?v=xTu2-KVCMx0",
           type: "text/html",
           youtubeid: "xTu2-KVCMx0",
-          poster: "./videos/spring-concert-2013/screenshots/Feeling Good (Michael Buble).jpg"
+          poster: "./videos/20140501/screenshots/Feeling Good (Michael Bublé).jpg"
         },
         {
           title: "Ain't Misbehavin' (Fats Waller)",
           href: "http://www.youtube.com/watch?v=7H1H5_kND7k",
           type: "text/html",
           youtubeid: "7H1H5_kND7k",
-          poster: "./videos/spring-concert-2013/screenshots/Ain't Misbehavin' (Fats Waller).jpg"
+          poster: "./videos/20140501/screenshots/Ain't Misbehavin' (Fats Waller).jpg"
         },
         {
           title: "All For You (Sister Hazel)",
           href: "http://www.youtube.com/watch?v=6BbNc5za-2o",
           type: "text/html",
           youtubeid: "6BbNc5za-2o",
-          poster: "./videos/spring-concert-2013/screenshots/All For You (Sister Hazel).jpg"
+          poster: "./videos/20140501/screenshots/All For You (Sister Hazel).jpg"
         },
         {
           title: "Somebody That I Used To Know (Gotye)",
           href: "http://www.youtube.com/watch?v=vEv4r66ml6Y",
           type: "text/html",
           youtubeid: "vEv4r66ml6Y",
-          poster: "./videos/spring-concert-2013/screenshots/Somebody That I Used To Know (Gotye).jpg"
+          poster: "./videos/20140501/screenshots/Somebody That I Used To Know (Gotye).jpg"
         },
         {
           title: "Rolling In The Deep (Adele)",
           href: "http://www.youtube.com/watch?v=H_qIDalY6AU",
           type: "text/html",
           youtubeid: "H_qIDalY6AU",
-          poster: "./videos/spring-concert-2013/screenshots/Rolling In The Deep (Adele).jpg"
+          poster: "./videos/20140501/screenshots/Rolling In The Deep (Adele).jpg"
         },
         {
           title: "Hit 'Em Up Style (Blue Cantrell)",
           href: "http://www.youtube.com/watch?v=OuZAaVqgr1U",
           type: "text/html",
           youtubeid: "OuZAaVqgr1U",
-          poster: "./videos/spring-concert-2013/screenshots/Hit 'Em Up Style (Blue Cantrell).jpg"
+          poster: "./videos/20140501/screenshots/Hit 'Em Up Style (Blue Cantrell).jpg"
         },
         {
           title: "Heart of the Matter (Don Henley)",
           href: "http://www.youtube.com/watch?v=zkv0q2zBCvA",
           type: "text/html",
           youtubeid: "zkv0q2zBCvA",
-          poster: "./videos/spring-concert-2013/screenshots/Heart of the Matter (Don Henley).jpg"
+          poster: "./videos/20140501/screenshots/Heart of the Matter (Don Henley).jpg"
         },
         {
           title: "Change In My Life (Leap of Faith)",
           href: "http://www.youtube.com/watch?v=pBkQ5EZ30kA",
           type: "text/html",
           youtubeid: "pBkQ5EZ30kA",
-          poster: "./videos/spring-concert-2013/screenshots/Change In My Life (Leap of Faith).jpg"
+          poster: "./videos/20140501/screenshots/Change In My Life (Leap of Faith).jpg"
         },
         {
           title: "Goodbye Earl (Dixie Chicks)",
           href: "http://www.youtube.com/watch?v=wuAHxaB6qP0",
           type: "text/html",
           youtubeid: "wuAHxaB6qP0",
-          poster: "./videos/spring-concert-2013/screenshots/Goodbye Earl (Dixie Chicks).jpg"
+          poster: "./videos/20140501/screenshots/Goodbye Earl (Dixie Chicks).jpg"
         },
         {
           title: "Butterflies (Michael Jackson)",
           href: "http://www.youtube.com/watch?v=Zeza3o-o1-4",
           type: "text/html",
           youtubeid: "Zeza3o-o1-4",
-          poster: "./videos/spring-concert-2013/screenshots/Butterflies (Michael Jackson).jpg"
+          poster: "./videos/20140501/screenshots/Butterflies (Michael Jackson).jpg"
         }],
         {
           container: "#spring-concert-2013",
-          titleElement: 'h4',
           carousel: true,
           
           youTubeVideoIdProperty: "youtubeid",

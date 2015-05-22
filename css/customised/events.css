@@ -17,7 +17,7 @@
 .event-pill {
   float: left;
   width: 75px;
-  height: 105px;
+  height: 110px;
   padding: 10px;
   background-color: #6C91DA;
 }
@@ -25,14 +25,14 @@
 .event-pill:hover {
   float: left;
   width: 75px;
-  height: 105px;
+  height: 110px;
   padding: 10px;
   background-color: #3059D6;
 }
 
 .event-pill .month {
   width: 55px;
-  line-height: 18px;
+  line-height: 20px;
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -41,7 +41,7 @@
 
 .event-pill .day {
   width: 55px;
-  line-height: 38px;
+  line-height: 40px;
   color: white;
   font-size: 28px;
   font-weight: bold;
@@ -60,6 +60,14 @@
   color: white;
   font-size: 12px;
   text-align: center;
+}
+
+.event-pill-important {
+  background-color: #DA6D6D;
+}
+
+.event-pill-important:hover {
+  background-color: #D73030;
 }
 
 /* EVENT ROW */
@@ -116,6 +124,14 @@
               </div>
 */
 
+.event-row-important {
+  background-color: #DA6D6D;
+}
+
+.event-row-important:hover {
+  background-color: #D73030;
+}
+
 @media (max-width: 427px) {
   
   .event-row .name {
@@ -150,7 +166,7 @@
 @media (min-width: 768px) {
   
   .event-body {
-    height: 105px;
+    height: 110px;
     padding-left: 15px;
   }
   

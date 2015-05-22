@@ -8,10 +8,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
-
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- Bootstrap core CSS -->
-    <link href="../css/libs/bootstrap-3.0.0.css" rel="stylesheet">
+    <link href="../css/libs/bootstrap-3.3.4.css" rel="stylesheet">
+    <link href="../css/libs/bootstrap-table-1.7.0.css" rel="stylesheet">
     <!--<link href="./css/libs/jquery-ui-1.10.3.custom.css" rel="stylesheet">
     <link href="./css/libs/angular-ui-0.3.0.css" rel="stylesheet">-->
     
@@ -22,6 +41,7 @@
     <link href="../css/customised/fonts.css" rel="stylesheet">
     
     <link href="../css/customised/margins.css" rel="stylesheet">
+    <link href="../css/customised/tables.css" rel="stylesheet">
     
     <style type="text/css"></style>
     
@@ -34,15 +54,14 @@
       <div class="container">
         
         <!-- header text and images -->
-        <div class="head" id="head"><a href="../index.html">
+        <div class="head" id="head"><a href="#">
           <p class="head-name no-margined">
             <span class="yaledesrom" style="color:#0000AA">Yale</span> <span class="yaledesrom"> Citations</span><sup class="yaledesrom">1</sup>
           </p>
-          <p class="head-sub no-margined hidden-xs">
-            <span class="yaledesita">1. Yale Graduate School's Co-ed A Cappella Group</span>
+          <p class="head-sub no-margined hidden-xs" style="padding-right:8px">
+            <sup class="yaledesrom">1 </sup><span class="yaledesrom">Yale's Graduate </span><span class="yaledesita"> A Cappella </span><span class="yaledesrom"> Group</span>
           </p>
         </a></div>
-        
         
         <!-- static navbar -->
         <div class="navbar navbar-default">
@@ -75,17 +94,112 @@
         <!-- splash image -->
         <div class="row">
           <div class="col-md-12">
-            <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined">
+            <a href="../ticketing/index.html">
+            <!-- <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined"> -->
+            <img src="../img/background/spring-concert-2015.jpg" class="img-responsive margined visible-xs">
+            <div class="img-container-scaling margined hidden-xs" style="background-image:url(../img/background/spring-concert-2015.jpg);"><div class="bitterbold" id="floating">SPRING&nbsp;CONCERT</div></div></a>
           </div>
         </div>
-        
-        <!-- main text boxes -->
+         
+         <!-- main text boxes -->
         <div class="col-md-12 text-box">
           <h4 class="no-top-margined">Music</h4>
           <p align="justify" class="no-bot-margined">
-          Currently under development!
+          We sing a range of styles, including rock, bluegrass, jazz, pop and R&B, and we update our repertoire every year as we bring back favorites and as our members arrange brand new songs! Below are some of our favorites from this year's repertoire:
           </p>
         </div>
+        
+        <!-- music table -->
+        <div class="row bootstrap-table-row">
+        
+          <div class="col-md-12 hidden-xs">
+          <table data-toggle="table" data-url="./music.json" data-classes="table table-hover table-condensed" data-striped="true" data-response-handler="respHand">
+            <thead>
+              <tr>
+                <th data-field="title" class="col-xs-4">Title</th>
+                <th data-field="artist(s)" class="col-xs-4">Artist (s)</th>
+                <th data-field="arranged by" class="col-xs-4">Arranged By</th>
+              </tr>
+            </thead>
+          </table>
+          </div>
+          
+          <div class="col-md-12 visible-xs">
+          <table data-toggle="table" data-url="./music.json" data-classes="table table-hover table-condensed data-card-view" data-card-view="true" data-striped="true" data-response-handler="respHand">
+            <thead>
+              <tr>
+                <th data-field="title">Title</th>
+                <th data-field="artist(s)">Artist (s)</th>
+                <th data-field="arranged by">Arranged By</th>
+              </tr>
+            </thead>
+          </table>
+          </div>
+          
+        </div>
+        
+        <div class="row bootstrap-table-row">
+        
+          <div class="col-md-12 hidden-xs">
+          <table data-toggle="table" data-url="./fight.json" data-classes="table table-hover table-condensed" data-striped="true" data-response-handler="respHand">
+            <thead>
+              <tr>
+                <th data-field="title" class="col-xs-4">Title</th>
+                <th data-field="author(s)" class="col-xs-4">Author(s)</th>
+                <th data-field="year" class="col-xs-4">Year</th>
+              </tr>
+            </thead>
+          </table>
+          </div>
+          
+          <div class="col-md-12 visible-xs">
+          <table data-toggle="table" data-url="./fight.json" data-classes="table table-hover table-condensed data-card-view" data-card-view="true" data-striped="true" data-response-handler="respHand">
+            <thead>
+              <tr>
+                <th data-field="title" class="col-xs-3">Title</th>
+                <th data-field="author(s)">Author(s)</th>
+                <th data-field="year">Year</th>
+              </tr>
+            </thead>
+          </table>
+          </div>
+          
+        </div>
+        
+        <!-- main text boxes -->
+        <!--<div class="col-md-12 text-box">
+          <h4 class="no-top-margined">Music</h4>
+          <p align="justify">
+          We sing a range of styles, including rock, bluegrass, jazz, pop and R&B, and we update our repertoire every year as we bring back favorites and as our members arrange brand new songs! Below are some of our favorites from this year's repertoire:
+          </p>
+          <p style="font-weight:bold">Repertoire 2015</p>
+          <ul>
+            <li>Ain't Misbehavin (Fats Waller, arranged by Check Cassey)</li>
+            <li>I'll Be Seeing You (Sammy Fain, arranged by Darmon Meader)</li>
+            <li>Change in My Life (Leap of Faith, arranged by Jamie O'Leary)</li>
+            <li>Pinball Wizard (Tho Who, arranged by Tyler Ames)</li>
+            <li>Hit 'Em Up Style (Blu Cantrell, arranged by Andrea Katz)</li>
+            <li>A Day in the Life (The Beatles, arranged by Andrea Katz)</li>
+            <li>Hallelujah (Jeff Buckley, arranged by Corey Johnson)</li>
+            <li>Kiss from a Rose (Seal, arranged by Taylor Ames)</li>
+            <li>Wake Me Up (Avicii, arranged by Andrea Katz)</li>
+            <li>At Last (Etta James, arranged by Mike Lane)</li>
+            <li>Uptown Funk (Mark Ronson and Bruno Mars, arranged by Tom Reznick)</li>
+            <li>No Diggity (Chet Faker, arranged by Tom Reznick)</li>
+            <li>Take Me To Church (Hozier, arranged by Padmini Pillai)</li>
+            <li>Your Heart Is As Black As Night (Melody Gardot, arranged by Andrea Katz)</li>
+            <li>Somebody to Love (Queen, arranged by Andrea Katz)</li>
+            <li>Bring It On Home To Me (Sam Cooke, arranged by Padmini Pillai)</li>
+            <li>Billie Jean (Michael Jackson, arranged by Sohyang Yoo)</li>
+          </ul>
+          <p style="font-weight:bold">Fight Songs</p>
+          <ul class="no-bot-margined">
+            <li>Boola Boola (Allan Hirsh, 1900)</li>
+            <li>Bulldog (Cole Porter, 1911)</li>
+            <li class="no-bot-margined">Bright College Years (Carl Wilhelm and H.S. Durand, 1911)</li>
+          </ul>
+          
+        </div>-->
         
       </div>
       
@@ -104,7 +218,14 @@
     
     <script src="../js/libs/jquery-1.10.2.js"></script>
     <script src="../js/libs/jquery-ui-1.10.3.js"></script>
-    <script src="../js/libs/bootstrap-3.0.0.js"></script>
+    <script src="../js/libs/bootstrap-3.3.4.js"></script>
+    <script src="../js/libs/bootstrap-table-1.7.0.js"></script>
+    
+    <script>
+      function respHand(res) {
+        return res.songs;
+      }
+    </script>
     
     <!--<script src="./js/libs/angular-1.0.8.js"></script>
     <script src="./js/libs/angular-strap-0.7.5.js"></script>

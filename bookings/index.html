@@ -8,10 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
-
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- Bootstrap core CSS -->
-    <link href="../css/libs/bootstrap-3.0.0.css" rel="stylesheet">
+    <link href="../css/libs/bootstrap-3.3.4.css" rel="stylesheet">
     <!--<link href="./css/libs/jquery-ui-1.10.3.custom.css" rel="stylesheet">
     <link href="./css/libs/angular-ui-0.3.0.css" rel="stylesheet">-->
     
@@ -37,15 +55,14 @@
       <div class="container">
         
         <!-- header text and images -->
-        <div class="head" id="head"><a href="../index.html">
+        <div class="head" id="head"><a href="#">
           <p class="head-name no-margined">
             <span class="yaledesrom" style="color:#0000AA">Yale</span> <span class="yaledesrom"> Citations</span><sup class="yaledesrom">1</sup>
           </p>
-          <p class="head-sub no-margined hidden-xs">
-            <span class="yaledesita">1. Yale Graduate School's Co-ed A Cappella Group</span>
+          <p class="head-sub no-margined hidden-xs" style="padding-right:8px">
+            <sup class="yaledesrom">1 </sup><span class="yaledesrom">Yale's Graduate </span><span class="yaledesita"> A Cappella </span><span class="yaledesrom"> Group</span>
           </p>
         </a></div>
-        
         
         <!-- static navbar -->
         <div class="navbar navbar-default">
@@ -78,18 +95,21 @@
         <!-- splash image -->
         <div class="row">
           <div class="col-md-12">
-            <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined">
+            <a href="../ticketing/index.html">
+            <!-- <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined"> -->
+            <img src="../img/background/spring-concert-2015.jpg" class="img-responsive margined visible-xs">
+            <div class="img-container-scaling margined hidden-xs" style="background-image:url(../img/background/spring-concert-2015.jpg);"><div class="bitterbold" id="floating">SPRING&nbsp;CONCERT</div></div></a>
           </div>
         </div>
-        
+         
         <!-- main text boxes -->
         <div class="col-md-12 text-box">
           <h4 class="no-top-margined">Bookings</h4>
           <p align="justify">
-          We are always interested in taking on new events, and our regular events include singing at Mory's, graduate and preofesisonal school such as reunions and holiday parties, and other private events such as birthday parties, cocktail parties, and weddings.
+          The Citations are available for campus events, New Haven community functions, and private parties. We are always interested in making new contacts and taking on exciting new events! Our regular performances include singing at Mory's, the traditional Yale dinner club, performing at graduate and professional school events, and numerous private holiday parties leading up to the winter holidays!
           </p>
-          <p align="justify">
-          If you are interested in having us sing at your next event then please send us an email at <a href="mailto:citations@yale.edu">citations@yale.edu</a> or use the form below, and we will get back to you. You can also contact one of our officers directly if you want to ask one of them about something in specific instead. 
+          <p class="no-bot-margined" align="justify">
+          If you are interested in having the Citations perform at your next occasion, please send us an email directly to <a href="mailto:citations@yale.edu">citations@yale.edu</a> or use the form below. We are taking bookings for the rest of the academic year now, so reach out!
           </p>
         </div>
         
@@ -202,7 +222,7 @@
     
     <script src="../js/libs/jquery-1.10.2.js"></script>
     <script src="../js/libs/jquery-ui-1.10.3.js"></script>
-    <script src="../js/libs/bootstrap-3.0.0.js"></script>
+    <script src="../js/libs/bootstrap-3.3.4.js"></script>
     
     <script src="../js/modals/officer-modal-nav.js"></script>
     <script src="../js/forms/mailto-submission.js"></script>

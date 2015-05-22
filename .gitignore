@@ -4,6 +4,8 @@
 *.txt
 img/background/*
 resources/*
+backup/*
+~*
 
 # =================== Linux ===================
 .*

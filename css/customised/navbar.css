@@ -7,7 +7,6 @@ body {
   padding-top: 30px;
 }
 
-
 /* EXTRA COLOR */
 .navbar-default {
   border-color: #C2D1FF;
@@ -55,6 +54,10 @@ body {
   margin-right: -15px;
   margin-bottom: 0px;
   margin-left: -15px;
+}
+
+.navbar .nav li {
+  margin-bottom: 0px;
 }
 
 .navbar .nav li a {

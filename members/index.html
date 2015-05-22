@@ -8,10 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../../assets/ico/favicon.png">
-
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- Bootstrap core CSS -->
-    <link href="../css/libs/bootstrap-3.0.0.css" rel="stylesheet">
+    <link href="../css/libs/bootstrap-3.3.4.css" rel="stylesheet">
     <!--<link href="../css/libs/jquery-ui-1.10.3.custom.css" rel="stylesheet">
     <link href="../css/libs/angular-ui-0.3.0.css" rel="stylesheet">-->
     
@@ -37,15 +55,14 @@
       <div class="container">
         
         <!-- header text and images -->
-        <div class="head" id="head"><a href="../index.html">
+        <div class="head" id="head"><a href="#">
           <p class="head-name no-margined">
             <span class="yaledesrom" style="color:#0000AA">Yale</span> <span class="yaledesrom"> Citations</span><sup class="yaledesrom">1</sup>
           </p>
-          <p class="head-sub no-margined hidden-xs">
-            <span class="yaledesita">1. Yale Graduate School's Co-ed A Cappella Group</span>
+          <p class="head-sub no-margined hidden-xs" style="padding-right:8px">
+            <sup class="yaledesrom">1 </sup><span class="yaledesrom">Yale's Graduate </span><span class="yaledesita"> A Cappella </span><span class="yaledesrom"> Group</span>
           </p>
         </a></div>
-        
         
         <!-- static navbar -->
         <div class="navbar navbar-default">
@@ -78,35 +95,43 @@
         <!-- splash image -->
         <div class="row">
           <div class="col-md-12">
-            <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined">
+            <a href="../ticketing/index.html">
+            <!-- <img src="../img/background/citations-banner-main.jpg" class="img-responsive margined"> -->
+            <img src="../img/background/spring-concert-2015.jpg" class="img-responsive margined visible-xs">
+            <div class="img-container-scaling margined hidden-xs" style="background-image:url(../img/background/spring-concert-2015.jpg);"><div class="bitterbold" id="floating">SPRING&nbsp;CONCERT</div></div></a>
           </div>
         </div>
-        
+         
         <!-- main text boxes -->
         <div class="col-md-12 text-box">
-          <h4 class=" no-top-margined">The Citations (2013)</h4>
-          <p class="no-bot-margined" align="justify">The Citations is Yale Graduate School's answer to what happens when you leave college and think that you have to leave a cappella behind. You don't! With members from many different departments across the graduate and professional schools, such as the Graduate School of Arts and Sciences, the Law School, the School of Management, and the School of Forestry and Environmental Studies, we have an extremely diverse range of backgrounds, interests, and cultures!</p>
+          <h4 class=" no-top-margined">The Citations 2014 - 2015</h4>
+          <!--<p align="justify">
+          The Citations is Yale Graduate School's answer to what happens when you leave college and think that you have to leave a cappella behind. You don't!
+          </p>-->
+          <p class="no-bot-margined" align="justify">
+          Our members come from departments across the graduate and professional schools. This year, we represent the Graduate School of Arts and Sciences, the School of Medicine, the Law School, and the School of Forestry and Environmental Studies. We pride ourselves on our diverse range of backgrounds, interests, and cultures, which makes for a very close and relaxed group!
+          </p>
         </div>
         
         <div class="col-md-12 text-box">
           <h4 class=" no-top-margined">Members</h4>
-          <p><a type="button" href="#modal0" data-toggle="modal">Andrea Katz</a> (Political Science and Law School)</p>
-          <p><a type="button" href="#modal1" data-toggle="modal">Brian Lipshutz</a> (Law School)</p>
-          <p><a type="button" href="#modal2" data-toggle="modal">Corey Johnson</a> (School of Forestry)</p>
-          <p><a type="button" href="#modal3" data-toggle="modal">Daniel Schlingman</a> (Biophysics and Biochesmitry)</p>
-          <p><a type="button" href="#modal4" data-toggle="modal">Erin Weber</a> (Biophysics and Biochesmitry)</p>
-          <p><a type="button" href="#modal5" data-toggle="modal">Graham Browne</a> (School of Management)</p>
-          <p><a type="button" href="#modal6" data-toggle="modal">Jacob Siegel</a> (Medicine)</p>
-          <p><a type="button" href="#modal7" data-toggle="modal">James Williams</a> (Applied Mathematics)</p>
-          <p><a type="button" href="#modal8" data-toggle="modal">Jennifer Skene</a> (Law School)</p>
-          <p><a type="button" href="#modal9" data-toggle="modal">Julian Prokopetz</a> (Law School)</p>
-          <p><a type="button" href="#modal10" data-toggle="modal">Kasey Christopher</a> (Genetics)</p>
-          <p><a type="button" href="#modal11" data-toggle="modal">Krishna Sampath</a> (Affiliate)</p>
-          <p><a type="button" href="#modal12" data-toggle="modal">Laura Van Schyndel</a> (Affiliate)</p>
-          <p><a type="button" href="#modal13" data-toggle="modal">Matt Akamatsu</a> (Biophysics and Biochemistry)</p>
-          <p><a type="button" href="#modal14" data-toggle="modal">Padmini Pillai</a> (Immunobiology)</p>
-          <p><a type="button" href="#modal15" data-toggle="modal">Qiudi Zhang</a> (East Asian Studies)</p>
-          <p><a type="button" href="#modal16" data-toggle="modal">Tom Reznick</a> (History)</p>
+          <p align="justify"><a type="button" href="#modal0" data-toggle="modal">Andrea Katz</a> (Political Science)</p>
+          <p align="justify"><a type="button" href="#modal1" data-toggle="modal">Corey Johnson</a> (School of Forestry)</p>
+          <p align="justify"><a type="button" href="#modal2" data-toggle="modal">Daniel DeRosha</a> (Chemistry)</p>
+          <p align="justify"><a type="button" href="#modal3" data-toggle="modal">Hasan Khan</a> (Chemistry)</p>
+          <p align="justify"><a type="button" href="#modal4" data-toggle="modal">Haya Jamali</a> (Chemistry)</p>
+          <p align="justify"><a type="button" href="#modal5" data-toggle="modal">Jacob Siegel</a> (Medicine)</p>
+          <p align="justify"><a type="button" href="#modal6" data-toggle="modal">James Williams</a> (Applied Mathematics)</p>
+          <p align="justify"><a type="button" href="#modal7" data-toggle="modal">Jeremy Liss</a> (Law School)</p>
+          <p align="justify"><a type="button" href="#modal8" data-toggle="modal">Krishna Sampath</a> (Affiliate)</p>
+          <p align="justify"><a type="button" href="#modal9" data-toggle="modal">Laura Van Schyndel</a> (Affiliate)</p>
+          <p align="justify"><a type="button" href="#modal10" data-toggle="modal">Laura Wiliams</a> (Affiliate)</p>
+          <p align="justify"><a type="button" href="#modal11" data-toggle="modal">Matt Akamatsu</a> (Molecular Biophysics and Biochemistry)</p>
+          <p align="justify"><a type="button" href="#modal12" data-toggle="modal">Maxwell Farina</a> (Medicine)</p>
+          <p align="justify"><a type="button" href="#modal13" data-toggle="modal">Molly Radis</a> (Nursing)</p>
+          <p align="justify"><a type="button" href="#modal14" data-toggle="modal">Padmini Pillai</a> (Immunobiology)</p>
+          <p align="justify"><a type="button" href="#modal15" data-toggle="modal">Sohyang Yoo</a> (Music)</p>
+          <p align="justify"><a type="button" href="#modal16" data-toggle="modal">Tom Reznick</a> (History)</p>
         </div>
         
         <div class="col-md-12 text-box">
@@ -127,7 +152,7 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title">Andrea Katz</h4>
-                <p class="no-bot-margined">Music Director <br> Ph.D. in Political Science '14, J.D. at Yale Law School '17 <br> <a href="mailto:andrea.katz@yale.edu">andrea.katz@yale.edu</a></p>
+                <p class="no-bot-margined">Music Director <!--<br> Ph.D. in Political Science '14, J.D. at Yale Law School '17--> <br> <a href="mailto:andrea.katz@yale.edu">andrea.katz@yale.edu</a></p>
               </div>
               <div class="modal-body">
                 <p class="no-margined" align="justify">Andrea is a 1st year JD student at the Yale Law School and a PhD candidate in Political Science. Although she's played classical piano most of her life, she believes her real musical awakening took place after college, during a year spent in Tokyo frequenting karaoke boxes and working on her singing (soprano). She's into dance, yoga, constitutional law and US and Latin American politics, and isn't a bad cook, either, if she may say so herself!</p>
@@ -143,10 +168,10 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title">James Williams</h4>
-                <p class="no-bot-margined">President <br> Ph.D Candidate in Applied Mathematics '17 <br> <a href="mailto:james.s.williams@yale.edu">james.s.williams@yale.edu</a></p>
+                <p class="no-bot-margined">President <!--<br> Ph.D Candidate in Applied Mathematics '17--> <br> <a href="mailto:james.s.williams@yale.edu">james.s.williams@yale.edu</a></p>
               </div>
               <div class="modal-body">
-                <p class="no-margined" align="justify">James is a second year Applied Mathematics PhD student even though he claims that he is not actually a nerd. He enjoys working, singing, drawing, hiking, sporting, and skyping New Zealand. Pity about the 15 hour time difference!</p>
+                <p class="no-margined" align="justify">James is a third year PhD student in Applied Mathematics, and he is currently working in the field of network science at <a href="http://yins.yale.edu/">YINS</a>. When he is not writing code, he enjoys singing, drawing, running, and being married to Laura Williams! James speaks loudly and quickly, coming from New Zealand, but makes up for it with deep bass resonance. And if you see anyone walking around in January wearing shorts, chances are his name is James!</p>
               </div>
             </div>
           </div>
@@ -159,10 +184,10 @@
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title">Padmini Pillai</h4>
-                <p class="no-bot-margined">Business Manager <br> Ph.D Candidate in Immunobiology '15 <br> <a href="mailto:padmini.pillai@yale.edu">padmini.pillai@yale.edu</a></p>
+                <p class="no-bot-margined">Business Manager <!--<br> Ph.D Candidate in Immunobiology '15--> <br> <a href="mailto:padmini.pillai@yale.edu">padmini.pillai@yale.edu</a></p>
               </div>
               <div class="modal-body">
-                <p class="no-margined" align="justify"></p>
+                <p class="no-margined" align="justify">Padmini is a Ph.D. candidate in the Immunobiology department and a proud Bostonian. She studies how our immune system recognizes influenza virus and how we can develop a long-lasting, kick ass flu vaccine. When she isn't in lab, Padmini enjoys singing, eating, cooking, eating, singing, and eating. She also plays piano, violin, Indian violin, and is a trained South Indian classical (Carnatic) vocalist. Padmini is married to fellow Citations member, Krishna "Special K" Sampath.</p>
               </div>
             </div>
           </div>
@@ -172,7 +197,7 @@
         
       <div id="member-modals">
         
-                <div id="modal0" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div id="modal0" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
             <image src="./pictures/Andrea Katz.jpg" class="left-image hidden-xs"></image>
@@ -190,21 +215,6 @@
         <div id="modal1" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-            <image src="./pictures/Brian Lipshutz.jpg" class="left-image hidden-xs"></image>
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Brian Lipshutz</h4>
-              </div>
-              <div class="modal-body">
-                <p class="no-margined" align="justify">Brian Lipshutz is a 2L at Yale Law School.  He sings tenor in the group.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div id="modal2" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
             <image src="./pictures/Corey Johnson.jpg" class="left-image hidden-xs"></image>
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -217,43 +227,13 @@
           </div>
         </div>
         
-        <div id="modal3" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="modal2" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-            <image src="./pictures/Daniel Schlingman.jpg" class="left-image hidden-xs"></image>
+            <image src="./pictures/Daniel DeRosha.jpg" class="left-image hidden-xs"></image>
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Daniel Schlingman</h4>
-              </div>
-              <div class="modal-body">
-                <p class="no-margined" align="justify">Daniel is a sixth year PhD student in MBB. In addition to singing, He is on the Yale Cycling team as well.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div id="modal4" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-            <image src="./pictures/Erin Weber.jpg" class="left-image hidden-xs"></image>
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Erin Weber</h4>
-              </div>
-              <div class="modal-body">
-                <p class="no-margined" align="justify">Erin is a sixth year PhD student in MBB. In addition to singing, she loves to knit!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div id="modal5" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-            <image src="./pictures/Graham Browne.jpg" class="left-image hidden-xs"></image>
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Graham Browne</h4>
+                <h4 class="modal-title">Daniel DeRosha</h4>
               </div>
               <div class="modal-body">
                 <p class="no-margined" align="justify"></p>
@@ -262,7 +242,37 @@
           </div>
         </div>
         
-        <div id="modal6" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="modal3" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="./pictures/Hasan Khan.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Hasan Khan</h4>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify">Hasan is a second year in Chemistry and makes (totally legitimate and legal) drugs in the secluded scientific utopia known as Yale West Campus. He was born and raised in Canada's capital and studied in Toronto before coming to Yale. He is roughly 14% (w/w) maple syrup. His musical training includes 15 years on and off as a drummer, so he has no idea how he ended up here. Likes: karaoke, curry, percussion of all sorts. Dislikes: very, very little!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal4" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="./pictures/Haya Jamali.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Haya Jamali</h4>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify">Haya is a 3rd year graduate student in the Chemistry department, and comes from the beautiful state of Washington. She can often be found blasting Taylor Swift in the car or participating in other people's hobbies. Haya's favorite things include desserts of any kind, YOLOing, and sarcasm.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal5" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
             <image src="./pictures/Jacob Siegel.jpg" class="left-image hidden-xs"></image>
@@ -277,7 +287,7 @@
           </div>
         </div>
         
-        <div id="modal7" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="modal6" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
             <image src="./pictures/James Williams.jpg" class="left-image hidden-xs"></image>
@@ -286,7 +296,22 @@
                 <h4 class="modal-title">James Williams</h4>
               </div>
               <div class="modal-body">
-                <p class="no-margined" align="justify">James is a second year Applied Mathematics PhD student even though he claims that he is not actually a nerd. He enjoys working, singing, drawing, hiking, sporting, and skyping New Zealand. Pity about the 15 hour time difference!</p>
+                <p class="no-margined" align="justify">James is a third year PhD student in Applied Mathematics, and he is currently working in the field of network science at <a href="http://yins.yale.edu/">YINS</a>. When he is not writing code, he enjoys singing, drawing, running, and being married to Laura Williams! James speaks loudly and quickly, coming from New Zealand, but makes up for it with deep bass resonance. And if you see anyone walking around in January wearing shorts, chances are his name is James!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal7" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="./pictures/Jeremy Liss.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Jeremy Liss</h4>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify">Jeremy is a madly talented 2L at the Law School who has been beatboxing for years now, and joined up during the year when we needed to drop some sick beats!</p>
               </div>
             </div>
           </div>
@@ -295,64 +320,19 @@
         <div id="modal8" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-            <image src="./pictures/Jennifer Skene.jpg" class="left-image hidden-xs"></image>
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Jennifer Skene</h4>
-              </div>
-              <div class="modal-body">
-                <p class="no-margined" align="justify">Jennifer is a third-year law student from Tallahassee, FL. After graduating from Northwestern with a degree in film and anthropology, she decided to do something more practical with her life... and instead decided to concentrate on legal history. Jennifer also works on issues of international environmental law and enjoys guitar, hiking, and playing ice hockey.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div id="modal9" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-            <image src="./pictures/Julian Prokopetz.jpg" class="left-image hidden-xs"></image>
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Julian Prokopetz</h4>
-              </div>
-              <div class="modal-body">
-                <p class="no-margined" align="justify">Julian Prokopetz is a student at the law school. In order to advance his studies, he spends a lot of time baking and consuming tortes, engaging in polite banter so as not to push conversations into uncivil procedure, going for long runs to maintain the vitality of his constitution, and irresponsibly signing new iTunes contracts without even a perfunctory perusal of their contents.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div id="modal10" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-            <image src="./pictures/Kasey Christopher.jpg" class="left-image hidden-xs"></image>
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Kasey Christopher</h4>
-              </div>
-              <div class="modal-body">
-                <p class="no-margined" align="justify">Kasey is a sixth year PhD candidate in the Department of Genetics, where she studies the role of Sonic Hedgehog signaling and cilia in mouse embryonic development. Aside from singing alto with The Citations, she enjoys spending her free time cooking, eating, playing with her mini dachshund puppy, and spending time with family and friends.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div id="modal11" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
             <image src="./pictures/Krishna Sampath.jpg" class="left-image hidden-xs"></image>
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h4 class="modal-title">Krishna Sampath</h4>
               </div>
               <div class="modal-body">
-                <p class="no-margined" align="justify"></p>
+                <p class="no-margined" align="justify">Krishna is an educator, lawyer, and technologist, and runs <a href="http://Apprentice100.com">Apprentice100</a>, a software developer apprenticeship program based in New Haven. The Citations discovered him singing karaoke at GPSCY one night and invited him to join their ranks, where he sings tenor, baritone, or bass, as the occasion demands. Krishna is a graduate of Northeastern University School of Law, and the University of California, Berkley, where he sang with the a cappella groups DeCadence and Noteworthy. He is married to the lovely Padmini Pillai.</p>
               </div>
             </div>
           </div>
         </div>
         
-        <div id="modal12" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="modal9" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
             <image src="./pictures/Laura Van Schyndel.jpg" class="left-image hidden-xs"></image>
@@ -367,7 +347,22 @@
           </div>
         </div>
         
-        <div id="modal13" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div id="modal10" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="./pictures/Laura Williams.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Laura Williams</h4>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify">Laura is all the way from across the Pacific Ocean... from New Zealand! She is married to James Williams (the red haired one) and has just moved to America this year. She is currently studying Child Development and Care via correspondence, and trying to make the most of her time at Yale. Laura's interests include singing soprano, sewing and spending as much time as possible with her husband and friends!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal11" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
             <image src="./pictures/Matt Akamatsu.jpg" class="left-image hidden-xs"></image>
@@ -382,6 +377,36 @@
           </div>
         </div>
         
+        <div id="modal12" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="./pictures/Maxwell Farina.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Maxwell Farina</h4>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="modal13" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+            <image src="./pictures/Molly Radis.jpg" class="left-image hidden-xs"></image>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Molly Radis</h4>
+              </div>
+              <div class="modal-body">
+                <p class="no-margined" align="justify">Molly is a third year in the Pediatric Nurse Practitioner program at the Yale School of Nursing. Molly sang in an acappella group during undergrad at Bates College, and is delighted to be singing with a group again! Molly's favorite pass times include: soccer, hiking, playing the ukulele, and watching Will Ferrel movies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <div id="modal14" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -391,7 +416,7 @@
                 <h4 class="modal-title">Padmini Pillai</h4>
               </div>
               <div class="modal-body">
-                <p class="no-margined" align="justify"></p>
+                <p class="no-margined" align="justify">Padmini is a Ph.D. candidate in the Immunobiology department and a proud Bostonian. She studies how our immune system recognizes influenza virus and how we can develop a long-lasting, kick ass flu vaccine. When she isn't in lab, Padmini enjoys singing, eating, cooking, eating, singing, and eating. She also plays piano, violin, Indian violin, and is a trained South Indian classical (Carnatic) vocalist. Padmini is married to fellow Citations member, Krishna "Special K" Sampath.</p>
               </div>
             </div>
           </div>
@@ -400,13 +425,13 @@
         <div id="modal15" class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-            <image src="./pictures/Qiudi Zhang.jpg" class="left-image hidden-xs"></image>
+            <image src="./pictures/Sohyang Yoo.jpg" class="left-image hidden-xs"></image>
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Qiudi Zhang</h4>
+                <h4 class="modal-title">Sohyang Yoo</h4>
               </div>
               <div class="modal-body">
-                <p class="no-margined" align="justify">Qiudi is a MA student in East Asian Studies. She grew up singing and dancing in China, Canada, Russia and the U.S. When she is not writing essays, Qiudi enjoys cooking and eating food. She is also a certified yoga instructor. How cool is that!</p>
+                <p class="no-margined" align="justify">Sohyang Yoo is a 3rd year international graduate student in the School of Music. Sohyang plays cello, but she likes to sing a tiny bit more! She is from <b>South</b> Korea, so you don't have to be scared. She likes listening to k-pops, singing, cooking, and finding places that have tasty food.</p>
               </div>
             </div>
           </div>
@@ -444,7 +469,7 @@
     
     <script src="../js/libs/jquery-1.10.2.js"></script>
     <script src="../js/libs/jquery-ui-1.10.3.js"></script>
-    <script src="../js/libs/bootstrap-3.0.0.js"></script>
+    <script src="../js/libs/bootstrap-3.3.4.js"></script>
     
     <script src="../js/modals/officer-modal-nav.js"></script>
     <script src="../js/modals/member-modal-nav.js"></script>

@@ -1,7 +1,23 @@
 /*!
  * Additional Fonts
  */
- 
+
+@font-face {
+    font-family: camboreg;
+    src: local(camboreg), url('../../fonts/customised/Cambo-Regular.ttf') format('truetype');
+}
+.camboreg {
+  font-family: camboreg;
+}
+
+@font-face {
+    font-family: bitterbold;
+    src: local(bitterbold), url('../../fonts/customised/Bitter-Bold.otf') format('opentype');
+}
+.bitterbold {
+  font-family: bitterbold;
+}
+
 @font-face {
     font-family: yaledesrom;
     src: local(yaledesrom), url('../../fonts/yale/converted/yaledesrom.ttf') format('truetype');

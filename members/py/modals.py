@@ -1,10 +1,6 @@
 #!C:\Anaconda\python.exe
 # coding=utf-8
 
-# calling: python merge_pig.py <pig_directory> <output_merged>
-# in: <pig_directory> / [part-r-00000] [part-r-00001] [...]
-# out: <output_merged>
-
 import time
 import sys
 import os

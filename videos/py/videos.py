@@ -40,7 +40,7 @@ a = time_mod.time()
 
 gallery_list_g = glob.iglob(os.path.join(gallery_directory,'*'))
 gallery_list = list(gallery_list_g)
-gallery_list.sort()
+gallery_list.sort(reverse=True)
 
 for gallery in gallery_list:
     
@@ -91,6 +91,8 @@ for gallery in gallery_list:
     
     with open(gallery + '/names.txt') as names_f, open(gallery + '/ids.txt') as ids_f:
         
+        first = True
+        
         for line in names_f:
             
             name = line.strip()
@@ -106,7 +108,7 @@ for gallery in gallery_list:
             + v + '''  href: "http://www.youtube.com/watch?v=''' + id + '''",\n''' \
             + v + '''  type: "text/html",\n''' \
             + v + '''  youtubeid: "''' + id + '''",\n''' \
-            + v + '''  poster: "./videos/spring-concert-2013/screenshots/''' + name + '''.jpg"\n''' \
+            + v + '''  poster: "./videos/''' + gallery_path + '''/screenshots/''' + name + '''.jpg"\n''' \
             + v + '''}''' \
             )
     

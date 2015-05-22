@@ -22,6 +22,15 @@ h4 {
   margin-bottom: 20px;
 }
 
+ul {
+  padding-left: 25px;
+  margin-bottom: 0px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 .img-rounded {
   border-radius: 4px;
 }
@@ -44,8 +53,13 @@ h4 {
   background-color: #EBF0FF;
 }
 
+.text-box-important {
+  border-color:#F3BDBD;
+  background-color:#FDEEEE
+}
+
 .a-bold {
-  font-weight: 800;
+  font-weight: bold;
   color: #333333;
 }
 
@@ -53,4 +67,50 @@ h4 {
   font-weight: bold;
   color: #333333;
   /*text-decoration: none;*/
+}
+
+/* responsive scaling */
+
+.img-container-scaling {
+  
+  background-position:center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 28.51%;
+  transition:padding-bottom 0.5s;
+  -webkit-transition:padding-bottom 0.5s;
+}
+
+.img-container-scaling:hover, .img-container-scaling:focus, .img-container-scaling:active {
+  color:  rgba(255, 255, 255, 0);
+  padding-bottom: 57.23%;
+}
+
+#floating {
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  color: white;
+  opacity: 0.8;
+  transition:opacity 0.5s;
+  -webkit-transition:opacity 0.5s;
+}
+
+.img-container-scaling:hover > #floating, .img-container-scaling:focus > #floating, .img-container-scaling:active > #floating {
+  opacity: 0;
+}
+
+/* floating font sizes */
+
+#floating {
+  font-size: 60px;
+}
+
+@media (min-width: 992px) {
+  #floating {
+    font-size: 80px;
+  }
 }
